@@ -1,21 +1,18 @@
-import Pill from "@/components/Pill";
+import { PROPERTYLISTINGSAMPLE } from "@/constants";
+import { PropertyProps } from "@/interfaces";
 
-const filters = [
-  "Top Villa",
-  "Self Checkin",
-  "Free Parking",
-  "Pet Friendly",
-  "Mountain View",
-];
-
-...
-
-{/* Filter Section */}
-<section className="my-6">
-  <h2 className="text-xl font-semibold mb-3">Filters</h2>
-  <div className="flex flex-wrap">
-    {filters.map((filter) => (
-      <Pill key={filter} label={filter} />
-    ))}
-  </div>
-</section>
+const Home = () => {
+  return (
+    <div>
+      {/* Hero Section */}
+      <section
+        className="bg-cover bg-center h-64 text-white flex flex-col justify-center items-center"
+        style={{
+          backgroundImage: `url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c')`,
+        }}
+      >
+        <h1 className="text-3xl font-bold">Find your favorite place here!</h1>
+        <p className="text-lg mt-2">
+          The best prices for over 2 million properties worldwide.
+        </p>
+      </section>
